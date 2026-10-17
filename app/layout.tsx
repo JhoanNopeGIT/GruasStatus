@@ -56,18 +56,20 @@ export default function RootLayout({
         
         {/* --- Google Ads (gtag.js) --- */}
         {/* Reemplaza AW-TU_ID_AQUI con tu ID real de Google Ads */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-5211579029"
-          strategy="afterInteractive"
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18517091843"
         />
-        <Script id="google-assets-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-5211579029');
-          `}
-        </Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18517091843');
+            `,
+          }}
+        />  
 
         {children}
 
