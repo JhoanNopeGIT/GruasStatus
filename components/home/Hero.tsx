@@ -147,7 +147,7 @@ export default function Hero() {
         >
           Tu tranquilidad es nuestro{" "}
           <span className="text-[var(--primary)] block sm:inline">
-            Estatus
+            Status
           </span>
         </h1>
 
